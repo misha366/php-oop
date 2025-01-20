@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once '../util/echoHtmlLine.php';
+
 // Все "переменные" класса - поля
 // Все "функции" класса - методы
 class Worker {
@@ -11,7 +13,7 @@ class Worker {
      public array $hours;
 
      public function work() {
-         // work
+         echoHtmlLine("working...");
      }
 
 }
