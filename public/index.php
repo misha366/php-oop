@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-require_once "../app/Worker.php";
+require_once "../vendor/autoload.php";
 
-$worker = new Worker();
+$worker = new \App\Worker();
 $worker->work();

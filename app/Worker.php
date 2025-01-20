@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace App;
+
 require_once '../util/echoHtmlLine.php';
 
 // Все "переменные" класса - поля
