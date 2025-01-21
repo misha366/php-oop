@@ -10,4 +10,6 @@ $worker = new Developer("John", 27, [2, 6, 10], "medium");
 $worker->setAge($worker->getAge() + 1);
 $worker->work();
 echoHtmlLine("{$worker->getAge()}");
+
+$worker->rest();
 //var_dump($worker);
