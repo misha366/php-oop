@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App;
 
-require_once '../util/echoHtmlLine.php';
+use function Util\echoHtmlLine;
 
 // Все "переменные" класса - поля
 // Все "функции" класса - методы
