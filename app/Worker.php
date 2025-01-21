@@ -10,9 +10,9 @@ use function Util\echoHtmlLine;
 class Worker {
     // Каждый класс должен выполнять какое-то одно конкретное действия.
     // Второе действие - второй класс, в один всё пихать не надо.
-     public string $name;
-     public int $age;
-     public array $hours;
+    public string $name;
+    public int $age;
+    public array $hours;
 
     public function __construct(string $name, int $age, array $hours) {
         $this->name = $name;
@@ -20,8 +20,8 @@ class Worker {
         $this->hours = $hours;
     }
 
-     public function work() {
-         echoHtmlLine("working...");
-     }
+    public function work() {
+        echoHtmlLine("working...");
+    }
 
 }

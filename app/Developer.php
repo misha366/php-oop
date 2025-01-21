@@ -11,8 +11,7 @@ use function Util\echoHtmlLine;
 // Наследуется всегда более конкретный класс от более абстрактного класса
 class Developer extends Worker {
     // Переопределение родительского метода
-    public function work()
-    {
+    public function work() {
         echoHtmlLine("developer working");
     }
 }
