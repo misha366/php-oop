@@ -14,6 +14,10 @@ class Worker {
     public int $age;
     public array $hours;
 
+    protected string $position;
+
+    private string $expirience;
+
     public function __construct(string $name, int $age, array $hours) {
         $this->name = $name;
         $this->age = $age;

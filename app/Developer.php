@@ -10,6 +10,9 @@ use function Util\echoHtmlLine;
 
 // Наследуется всегда более конкретный класс от более абстрактного класса
 class Developer extends Worker {
+    // есть возможность доступа к родительскому полю с модификатором protected
+    protected string $position = 'developer';
+
     // Переопределение родительского метода
     public function work() {
         echoHtmlLine("developer working");
