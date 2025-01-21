@@ -14,17 +14,23 @@ class Worker {
     private int $age;
     private array $hours;
 
-    protected string $position;
+    private string $position;
 
     private string $experience;
 
-    public function __construct(string $name, int $age, array $hours) {
+    public function __construct(string $name,
+                                int $age,
+                                array $hours,
+                                string $experience,
+                                string $position) {
         $this->name = $name;
         $this->age = $age;
         $this->hours = $hours;
+        $this->experience = $experience;
+        $this->position = $position;
     }
 
-    public function work() {
+    public function work() : void {
         echoHtmlLine("working...");
     }
 

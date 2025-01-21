@@ -6,7 +6,7 @@ use function Util\echoHtmlLine;
 
 require_once "../vendor/autoload.php";
 
-$worker = new Developer("John", 27, [2, 6, 10]);
+$worker = new Developer("John", 27, [2, 6, 10], "medium");
 $worker->setAge($worker->getAge() + 1);
 $worker->work();
 echoHtmlLine("{$worker->getAge()}");

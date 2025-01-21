@@ -10,11 +10,15 @@ use function Util\echoHtmlLine;
 
 // Наследуется всегда более конкретный класс от более абстрактного класса
 class Developer extends Worker {
-    // есть возможность доступа к родительскому полю с модификатором protected
-    protected string $position = 'developer';
 
-    // Переопределение родительского метода
-    public function work() {
+    public const DEVELOPER_POSITION = "developer";
+
+    public function __construct(string $name, int $age, array $hours, string $experience)
+    {
+        parent::__construct($name, $age, $hours, $experience, self::DEVELOPER_POSITION);
+    }
+
+    public function work() : void {
         echoHtmlLine("developer working");
     }
 }
