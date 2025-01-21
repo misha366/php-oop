@@ -11,7 +11,7 @@ use function Util\echoHtmlLine;
 // Наследуется всегда более конкретный класс от более абстрактного класса
 class Developer extends Worker {
 
-    public const DEVELOPER_POSITION = "developer";
+    const DEVELOPER_POSITION = "developer";
 
     public function __construct(string $name, int $age, array $hours, string $experience)
     {
