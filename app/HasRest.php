@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace App;
 
 // Описание поведения с реализацией
-use function Util\echoHtmlLine;
+use function Util\echoLine;
 
 trait HasRest
 {
@@ -21,6 +21,6 @@ trait HasRest
     abstract public function getName(): string;
 
     public function rest() : void {
-        echoHtmlLine("{$this->getName()} has rest");
+        echoLine("{$this->getName()} has rest");
     }
 }

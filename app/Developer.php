@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App;
 
-use function Util\echoHtmlLine;
+use function Util\echoLine;
 
 // Перед классом Worker не добавляем \App\, потому что оба класса
 // лежать в одной папке
@@ -21,6 +21,6 @@ class Developer extends Worker {
     }
 
     public function work() : void {
-        echoHtmlLine("developer working");
+        echoLine("developer working");
     }
 }

@@ -4,6 +4,6 @@ declare(strict_types=1);
 
 namespace Util;
 
-function echoHtmlLine(string $text): void {
-    echo $text . "<br/>";
+function echoLine(string $text, bool $isTag = false): void {
+    echo $text . ($isTag ? "<br/>" : "\n");
 }
