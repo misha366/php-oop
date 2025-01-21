@@ -3,11 +3,9 @@ declare(strict_types=1);
 
 namespace App;
 
-use function Util\echoHtmlLine;
-
 // Все "переменные" класса - поля
 // Все "функции" класса - методы
-class Worker {
+abstract class Worker implements WorkerInterface {
     // Каждый класс должен выполнять какое-то одно конкретное действия.
     // Второе действие - второй класс, в один всё пихать не надо.
     private string $name;
@@ -29,12 +27,6 @@ class Worker {
         $this->experience = $experience;
         $this->position = $position;
     }
-
-    public function work() : void {
-        echoHtmlLine("working...");
-    }
-
-
 
     public function getName(): string
     {
